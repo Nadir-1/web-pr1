@@ -1,0 +1,255 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+.navbar,
+.dropdown-menu {
+  background-color: rgba(33, 37, 41, 0.5);
+}
+.navbar-toggler {
+  border-color: rgb(0, 123, 255);
+  background: rgba(33, 37, 41, 0.5);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 123, 255,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link,
+.navbar-brand,
+.dropdown-item {
+  color: #007bff;
+}
+.nav-link {
+  margin-right: 1em;
+  text-align: center;
+}
+.nav-link:hover {
+  background: #007bff;
+  color: #ffffff;
+}
+.active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.dropdown-item:hover {
+  background: #007bff;
+  color: #ffffff;
+}
+.dropdown-divider {
+  border-color: #007bff;
+}
+
+header {
+  background-image: url("../Images/tech.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+header .descriptionA {
+  color: white;
+}
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+header h1 {
+  color: #007bff;
+}
+/*                                          about                                          */
+
+.about h3 {
+  color: #007bff;
+  padding-top: 4.5rem;
+}
+
+.about span {
+  color: #212529;
+}
+.about .para {
+  color: #212529;
+  border-left: #007bff solid 1px;
+}
+.about h4 {
+  color: #007bff;
+}
+
+/*                                                    team                                        */
+
+.team h3 {
+  color: #007bff;
+}
+.team .des {
+  background: #007bff;
+  color: #ffffff;
+  text-align: center;
+  border-bottom-left-radius: 100%;
+}
+.team .job {
+  color: #ffffff;
+  background: #212529;
+  text-align: center;
+  border-top-right-radius: 100%;
+}
+.team .item:hover .des {
+  height: 100%;
+  background: rgba(15, 84, 233, 0.5);
+  position: absolute;
+  width: 89%;
+  padding-top: 4.5em;
+  top: 0;
+  border-bottom-left-radius: 0;
+}
+.team img {
+  height: 150px;
+  margin-left: 1.5em;
+  width: 80%;
+}
+
+/*                                          About us (about+team)                                      */
+.about-us {
+  background: #ffffff;
+}
+
+/*                                                 Contact-us                                          */
+input,
+textarea {
+  font-weight: 900;
+}
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  box-shadow: none;
+}
+.contact {
+  background-image: url("../Images/computer.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-weight: 900;
+}
+.contact .t3 {
+  color: #007bff;
+  padding-top: 4rem;
+  padding-bottom: 0.25rem;
+  font-weight: 900;
+}
+.contact i {
+  color: #212529;
+}
+.contact .description {
+  top: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.contact p {
+  margin-top: 1em;
+}
+
+input {
+  border-bottom-color: #212529;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  color: #212529;
+  background: none;
+}
+.de {
+  box-sizing: border-box;
+  max-width: 90%;
+  background: none;
+}
+.contact .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/*                                             footer                                        */
+
+footer {
+  background: #007bff;
+  color: #212529;
+}
+footer i {
+  color: #212529;
+}
+footer .ss {
+  margin-left: -2.75em !important;
+}
+footer .container {
+  position: relative;
+}
+
+/*********************************************************************/
+
+.section {
+  position: relative;
+}
+
+/********************************************************************************/
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  width: 40px;
+  font-size: 30px;
+  text-align: center;
+  color: #007bff;
+  background-color: #212529;
+  display: none;
+  border-radius: 50%;
+}
+.scroll-to-top:hover {
+  color: #212529;
+  background-color: #007bff;
+}
+
+/*******************************************************************************/
+
+@media screen and (max-width: 576px) {
+  .about .para {
+    border: none;
+  }
+}
+@media screen and (min-width: 701px) {
+  .med-i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .big {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-height: 500px) {
+  header {
+    height: 150%;
+    width: 100%;
+  }
+}
+@media screen and (min-height: 501px) {
+  header {
+    height: 100%;
+    width: 100%;
+  }
+}
